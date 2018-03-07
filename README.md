@@ -1,2 +1,2 @@
-# fef
-Beth Tech - Front End Foundations lesson work
+# Front End Foundations
+Each lesson is seperated by a comment block
