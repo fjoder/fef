@@ -1,2 +1,2 @@
 # Front End Foundations
-Each lesson is seperated by a comment block
+Each lesson has its own script file
