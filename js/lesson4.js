@@ -14,6 +14,7 @@ console.log("Hands-On 1");
 console.log("----------");
 
 phoneNumberFormat("(555) 555-1234");
+phoneNumberFormat("555 555-1234");
 
 // Hands-On 2
 let newNumber = 10;
