@@ -47,6 +47,6 @@ function loadInfo() {
       $("#info").html(this.responseText);
     }
   };
-  xhttp3.open("GET", "info.txt", true);
+  xhttp3.open("GET", "./data/info.txt", true);
   xhttp3.send();
 }
