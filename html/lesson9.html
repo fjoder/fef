@@ -7,9 +7,152 @@
   <title>Bootstrap</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 <body>
+
+  <div class="container-fluid">
+    <div class="jumbotron mb-1">
+      <h1 class="display-4">Lesson 9 - Bootstrap</h1>
+      <p class="lead">Everything you wanted to know & somethings you wish you didn't</p>
+    </div>
+
+    <nav class="navbar navbar-expand navbar-light bg-light">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">1</a>
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">3</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign in</a>
+        </li>
+      </ul>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </nav>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card">
+          <form class="card-body p-4">
+            <h4 class="card-title border-bottom mb-3">Hands-On 1 - Form</h4>
+            <div class="form-group row">
+              <label for="firstName" class="col-2 col-form-label">First Name</label>
+              <div class="col-10">
+                <input id="firstName" type="text" class="form-control" name="firstName" placeholder="First Name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="lastName" class="col-2 col-form-label">Last Name</label>
+              <div class="col-10">
+                <input id="lastName" type="text" class="form-control" name="lastName" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="phoneNumber" class="col-2 col-form-label">Phone Number</label>
+              <div class="col-10">
+                <input id="phoneNumber" type="text" class="form-control" name="phoneNumber" placeholder="Phone Number">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-2 col-form-label">Email</label>
+              <div class="col-10">
+                <input id="email" type="text" class="form-control" name="email" placeholder="email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-2 col-form-label">Preferred Contact Time</label>
+              <div class="col-10 d-flex">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="am" value="AM">
+                  <label class="form-check-label" for="am">AM</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="pm" value="PM">
+                  <label class="form-check-label" for="pm">PM</label>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title border-bottom mb-3">Hands-On 2 - Table & Modal</h4>
+            <table class="table table-bordered table-hover">
+              <thead class="thead-light">
+                <th>First name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Frank</td>
+                  <td>Oder</td>
+                  <td>34</td>
+                </tr>
+                <tr>
+                  <td>Cassie</td>
+                  <td>Magnotta</td>
+                  <td>33</td>
+                </tr>
+                <tr>
+                  <td>Abigail</td>
+                  <td>Holt</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <td>Breanna</td>
+                  <td>Schimmel</td>
+                  <td>21</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#errorModal">
+              Modal
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="errorModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title">Error</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div>
+                <i class="fas fa-times-circle text-danger"></i>
+                You've come to the end of the line, please turn back!
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <!-- Bootstrap required JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
