@@ -1,3 +1,7 @@
+// ******************************
+//  Front End Foundations - Lesson 8
+// ******************************
+
 function createGallery() {
   const dir = "../html/imgs/logos/";
   const gallery = document.getElementById('gallery');
